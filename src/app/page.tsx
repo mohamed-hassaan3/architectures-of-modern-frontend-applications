@@ -1,20 +1,20 @@
-import CurrentWeather from "@/modules/Weather";
-import Users from "@/modules/Users";
+import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="">
-      <main className="my-6 ">
-        <article className="space-y-8">
-          <section>
-            <h1 className="text-center mb-4 text-2xl text-gray-400">Client Side Render</h1>
-            <CurrentWeather />
-          </section>
-          <section>
-            <h1 className="text-center mb-4 text-2xl text-gray-400">Server Side Render</h1>
-            <Users />
-          </section>
-        </article>
+      <main className="flex gap-16 justify-center items-center h-screen">
+        <Link href={"/weather"}>
+          <Button color={"primary"} size={"md"}>
+            Client Side
+          </Button>
+        </Link>
+        <Link href={"/users"}>
+          <Button color={"primary"} size={"md"}>
+            Server Side
+          </Button>
+        </Link>
       </main>
     </div>
   );

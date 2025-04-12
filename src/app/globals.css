@@ -24,3 +24,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.Button {
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all;
+  transition-duration: .3s;
+  outline: none;
+}
+.primary {
+  background-color: var(--foreground);
+  color:  var(--background);
+  border: 1px solid;
+  transition: background-color 0.3s;
+}
+.primary:hover {
+  background-color: #9ba0aa; 
+}
+
+.danger {
+  background-color: #dc2626; 
+  color: white;
+  border: 1px solid;
+  transition: background-color 0.3s;
+}
+.danger:hover {
+  background-color: #f87171; 
+}
+
+.transparent {
+  background-color: transparent;
+  color: white;
+  border: 1px solid;
+  transition: opacity 0.3s;
+}
+.transparent:hover {
+  opacity: 0.9;
+}
+
+.sm {
+  padding: 0.5rem 1rem; 
+  font-size: 0.875rem; 
+  border-radius: 8px !important;
+}
+
+.md {
+  padding: 1rem 2rem; 
+  font-size: 1rem; 
+}
+
+.lg {
+  padding: 2rem 4rem; 
+  font-size: 1.125rem; 
+}
