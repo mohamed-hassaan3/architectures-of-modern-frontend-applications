@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: " http://api.weatherapi.com/v1",
+  baseURL: process.env.NEXT_PUBLIC_WEATHER_URL,
 });

@@ -10,4 +10,12 @@ declare global {
     type?: "reset" | "submit";
     onClick?: () => void
   };
+  type InitialUsers = {
+    isLoading: boolean
+    error: null | string
+    users: []
+  }
+  type RootStateUsers = {
+    users: InitialUsers
+  }
 }
