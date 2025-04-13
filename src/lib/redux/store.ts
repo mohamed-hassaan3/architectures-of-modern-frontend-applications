@@ -4,7 +4,7 @@ import { RootReducer } from "./rootReducer";
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      RootReducer,
+      users: RootReducer,
     },
   });
 };
